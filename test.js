@@ -54,7 +54,7 @@ describe('Ván chơi kết thúc khi có 5 ô sát nhau được đánh dấu gi
         }
 
         var result = getGameResult();
-        result.should.equal("end");
+        result.not.equal(false);
     });
 
     it('Ván đấu kết thúc 5 ô liên tiếp theo hàng chéo', function () {
@@ -67,7 +67,7 @@ describe('Ván chơi kết thúc khi có 5 ô sát nhau được đánh dấu gi
         }
 
         var result = getGameResult();
-        result.should.equal("end");
+        result.not.equal(false);
     });
 
     it('Ván đấu kết thúc 5 ô liên tiếp theo hàng dọc', function () {
@@ -78,7 +78,7 @@ describe('Ván chơi kết thúc khi có 5 ô sát nhau được đánh dấu gi
         }
 
         var result = getGameResult();
-        result.should.equal("end");
+        result.not.equal(false);
     });
 });
 
